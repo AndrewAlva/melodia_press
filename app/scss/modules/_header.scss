@@ -1,0 +1,82 @@
+header{
+	z-index: 1;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	padding: 11px 0 18px;
+	background-color: #fff;
+	text-align: center;
+
+	@include laptop-sm-width {
+		top: 18px;
+		left: 50px;
+		width: 185px;
+		height: 185px;
+		padding: 36px 0 42px;
+	}
+
+	@include desktop-width {
+		top: 36px;
+		left: 100px;
+		width: 215px;
+		height: 215px;
+		padding-top: 46px;
+	}
+
+	figure{
+		position: relative;
+		margin: 0 auto;
+		width: 42px;
+		height: 42px;
+		border-radius: 50%;
+		background-color: #007aff;
+  		@include drawShadow(0px, 5px, 11px, 0px, rgba(16, 40, 77, 0.14));
+
+  		@include laptop-sm-width {
+  			width: 88px;
+  			height: 88px;
+  			margin-bottom: 5px;
+  		}
+
+  		@include desktop-width {
+  			margin-bottom: 18px;
+  		}
+
+  		img{
+  			position: absolute;
+  			top: 5px;
+  			bottom: 0;
+  			left: 0; right: 0;
+  			margin: auto;
+  			width: 28px;
+
+  			@include laptop-sm-width {
+  				top: 10px;
+  				width: 53px;
+  			}
+  		}
+	}
+
+	h1{
+		font-family: 'Gotham_Bold';
+		font-size: .8em;
+
+		@include laptop-sm-width {
+			font-size: 1.08em;
+		}
+	}
+
+	&.inview{
+		opacity: 0;
+		@include scale(.8,.8);
+		@include transitions-ease(.6s);
+
+		&.in-view{
+			opacity: 1;
+			@include scale(1,1);
+		}
+	}
+}

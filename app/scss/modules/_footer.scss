@@ -1,0 +1,51 @@
+footer{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	padding: 36px 0 54px;
+
+	&:before{
+		content: '';
+		opacity: .3;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 70%;
+		height: 1px;
+		max-width: 813px;
+		margin: 0 auto;
+		background-color: #fff;
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&1+0,0+100;White+to+Transparent */
+		background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+		background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	}
+
+	p{
+		font-family: 'Gotham_Light';
+		font-size: .7em;
+		letter-spacing: -0.001em;
+		color: $brand-blue--down;
+
+		a{
+			margin-left: 12px;
+			color: inherit;
+			text-decoration: none;
+			@include transitions-ease(.3s);
+
+			&:before{
+				content: '/';
+				display: inline-block;
+				font-family: 'Gotham_Light';
+				font-size: 1.1em;
+				margin-right: 13px;
+			}
+
+			&:hover{
+				color: $brand-yellow;
+			}
+		}
+	}
+}

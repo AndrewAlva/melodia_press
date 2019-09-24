@@ -1,0 +1,50 @@
+// Default style
+*{
+	@include border-box;
+}
+
+body{
+	color: $body-color;
+	background-color: #fff;
+	font-size: 16px;
+	font-family: 'Gotham_Book', sans-serif;
+	line-height: 1.5em;
+
+	@include laptop-md-width {
+		font-size: 18px;
+	}
+
+	@include desktop-width {
+		font-size: 20px;
+	}
+}
+
+body, h1, h2, h3, h4, h5, h6, p, section, div, nav, ul, li, button, figure{
+	margin: 0;
+	padding: 0;
+}
+
+.blue-high{
+	color: $brand-blue;
+}
+
+.blue-down{
+	color: $brand-blue--down;
+}
+
+.bold-high{
+	font-family: 'Gotham_Bold';
+}
+
+.container{
+	// @media (min-width: 1200px){
+	@include desktop-width {
+		max-width: 1245px;
+	}
+}
+
+#main-wrapper{
+	background-color: $html-bg;
+		position: relative;
+		overflow: hidden;
+}
