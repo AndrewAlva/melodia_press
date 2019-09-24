@@ -9,6 +9,12 @@
 	@include drawShadow(-3.126px, 17.727px, 35px, 0px, rgba(0, 0, 0, 0.2));
 	cursor: pointer;
 	@include transitions-ease(.6s);
+	min-width: 221px;
+	text-align: right;
+
+	@include tablet-width {
+		min-width: 266px;
+	}
 
 	a{
 		text-decoration: none;
@@ -44,7 +50,8 @@
 		height: 36px;
 		border-radius: 50%;
 		margin-left: 20px;
-		background-color: $brand-yellow--dark;
+		// background-color: $brand-yellow--dark;
+		background-color: rgba(255,255,255,.3);
 
 		svg{
 			position: absolute;
@@ -52,11 +59,27 @@
 			top: 0; bottom: 0;
 			left: 0; right: 0;
 			width: 13px;
+
+			path{
+				fill: #000;
+			}
 		}
 	}
 
 	&:hover{
 		@include transitions-ease(.4s);
 		@include drawShadow(-1.126px, 7.727px, 10px, 0px, rgba(0, 0, 0, 0.3));
+	}
+
+	&.white{
+		background-color: #fff;
+
+		.arrow{
+			background-color: $brand-blue--btn;
+
+			svg path{
+				fill: #fff;
+			}
+		}
 	}
 }

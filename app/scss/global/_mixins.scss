@@ -167,6 +167,16 @@ $desktop-width: 1441px;
 	-ms-flex-direction: column;
 }
 
+
+
+@mixin flexCenter{
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
 @mixin flexJustify{
 	-webkit-box-pack: justify;
 	-ms-flex-pack: justify;

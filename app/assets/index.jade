@@ -2,249 +2,31 @@ extends _templates/layout.jade
 
 block content
 	//- .test
-	section.hero-section
-		.bg.inview
-			canvas#hero-dots
-			include _modules/svg/notes.jade
-
-		.container
-			.row
-				.col-12.col-lg-5
-					._intro
-						h1.inview melodia
-						h2.inview a smarter music app.
-						.inview.btn
-							button.cta-btn
-								a(href="https://google.com/" target="_blank")
-									figure.apple 
-										include _modules/svg/apple.jade
-									span._label get melodia
-									figure.arrow 
-										include _modules/svg/arrow.jade
-
-				.col-12.col-lg-7
-					.phones-wrapper.inview
-						figure.iphone-wrap.black
-							img(src="img/iPhone-black.png", alt="iPhone Mockup")
-							.ui
-								img(src="img/ui/hero-left.png", alt="Melodia App Interface")
-
-						figure.iphone-wrap.white
-							img(src="img/iPhone-white.png", alt="iPhone Mockup")
-							.ui
-								img(src="img/ui/hero-mid.png", alt="Melodia App Interface")
-
-						figure.iphone-wrap.black
-							img(src="img/iPhone-black.png", alt="iPhone Mockup")
-							.ui
-								img(src="img/ui/hero-right.png", alt="Melodia App Interface")
-		.fg
-			include _modules/svg/hero-wave.jade
-
-
-
-	section.bullet-section.text-right
-		.skewed-bg.inview
-		.container
-			.row.order-wrap
-				.col-12.col-lg-5.col-xl-7.mob-2
-					.illustration-wrap
-						.bg.inview
-							include _modules/svg/rounded-square-shaded.jade
-
-						.interface.inview
-							include _modules/svg/dots-ring.jade
-							figure.phone
-								img.device(src="img/iphone-flat.png", alt="iPhone Device")
-								img.ui(src="img/ui/radio.png", alt="Melodia radio interface")
-
-						ul.album-covers.inview
-							li.cover
-								img(src="img/song1.png", alt="melodia app albums")
-							li.cover
-								img(src="img/song2.jpg", alt="melodia app albums")
-							li.cover
-							li.cover
-								img(src="img/song3.jpg", alt="melodia app albums")
-							li.cover
-								img(src="img/song4.png", alt="melodia app albums")
-
-						.day-cicle.inview
-							.day.bubble
-								figure.sun
-
-							.night.bubble
-								figure.moon
-									include _modules/svg/moon.jade
-
-				.col-12.col-lg-5.offset-lg-2.offset-xl-0.mob-1
-					._info.inview
-						h3
-							|simple
-							br
-							|+ intelligent.
-						p one smart radio personalized to your unique taste and moment.
-
-
-
-	figure.divider.inview
-		img(src="img/division.png", alt="section divider")
-
-	section.bullet-section.text-left
-		.container
-			.row
-				.col-12.col-lg-6
-					._info.inview
-						h3 
-							|it 
-							span.blue-high learns 
-							|from your listening patterns.
-
-						p with its advanced AI and machine learning algorithms, melodia dynamically curates the right flow of songs that best match your taste and moment.
-
-				.col-12.col-lg-6
-					.illustration-wrap
-						.bg.inview
-							include _modules/svg/rounded-square.jade
-							canvas#mid-dots
-
-						.interface
-							.br-code.inview
-								include _modules/svg/code.jade
-							.tr-code.inview
-								include _modules/svg/code.jade
-							.left-code.inview
-								include _modules/svg/code.jade
-
-							figure.sine-graph.inview
-								img(src="img/graph.png", alt="Data graph")
-
-							figure.blurred-phone.inview
-								img(src="img/blurred-iphone.png", alt="iPhone Device")
-
-							figure.poly-graph.inview
-								img(src="img/dashboard-graph2.png", alt="Data graph")
-
-							figure.circle-graph.inview
-								img(src="img/circles-graph.png", alt="Circle data graph")
-
-							figure.singers-graph.inview
-								img.graphs(src="img/singers-graphs.png", alt="Circle data graph")
-
-								.faces-container
-									.face-component.sm.first
-										._face
-											img(src="img/artists/Shawn_Mendes.jpg", alt="portrait")
-										._line
-										._graph-dot
-
-									.face-component.second
-										._face
-											img(src="img/artists/U2.jpg", alt="portrait")
-										._line
-										._graph-dot
-
-									.face-component.third
-										._face
-											img(src="img/artists/Katy_Perry.jpg", alt="portrait")
-										._line
-										._graph-dot
-
-									.face-component.fourth
-										._face
-											img(src="img/artists/Ed_Sheeran.jpg", alt="portrait")
-										._line
-										._graph-dot
-
-									.face-component.sm.fifth
-										._face
-											img(src="img/artists/Taylor_Swift.jpg", alt="portrait")
-										._line
-										._graph-dot
-
-	figure.divider.inview
-		img(src="img/division.png", alt="section divider")
-
-
-	section.cards-section.inview
-		.container
-			.row
-				.col-12
-					._info.inview
-						h3 why melodia?
-						p melodia brings you a smarter and simpler radio, providing you with the kind of variety and flow that matches your unique taste.
-
-			.row.cards-container
-				.col-12.col-sm-8.offset-sm-2.col-lg-4.offset-lg-0
-					.card-wrap
-						figure._icon 
-							include _modules/svg/shuffle.jade
-							include _modules/svg/dont.jade
-						p 
-							span.blue-high stop 
-							|shuffle playing the same playlists.
-				.col-12.col-sm-8.offset-sm-2.col-lg-4.offset-lg-0
-					.card-wrap
-						figure._icon
-							include _modules/svg/list.jade
-							include _modules/svg/dont.jade
-						p 
-							span.blue-high stop 
-							|listening to the 
-							br
-							|same songs and stations.
-				.col-12.col-sm-8.offset-sm-2.col-lg-4.offset-lg-0
-					.card-wrap
-						figure._icon
-							include _modules/svg/playlists.jade
-							include _modules/svg/dont.jade
-						p 
-							span.blue-high stop 
-							|constantly organizing your library and playlists.
-
-
-
 	section.centered-section
 		.bg.inview
+			include _modules/svg/press-wave.jade
 			canvas#last-dots
 			include _modules/svg/notes.jade
-			include _modules/svg/closure-wave.jade
 
 		.container
 			.row
-				.col-12.col-lg-4.offset-lg-1.offset-xl-2
-					.phones-wrapper.inview
-						figure.iphone-wrap.white
-							img(src="img/iPhone-white.png", alt="iPhone Mockup")
-							.ui
-								img(src="img/ui/hero-mid.png", alt="Melodia App Interface")
-				.col-12.col-lg-6
-					.closure-text.inview
-						h4 melodia is free for everyone!
-						p download melodia now and get access to over 
-							span.bold-high 40 million songs.
-						.btn
-							button.cta-btn
-								a(href="https://google.com/" target="_blank")
-									figure.apple 
-										include _modules/svg/apple.jade
-									span._label get melodia
-									figure.arrow 
-										include _modules/svg/arrow.jade
+				.buttons-row
+					.btn
+						button.cta-btn
+							a(href="https://google.com/" target="_blank")
+								span._label about melodia
+								figure.arrow
+									include _modules/svg/arrow.jade
 
-						p.help
-							span.blue-down questions? 
-							a(href="#") contact us now.
+					.btn
+						button.cta-btn.white
+							a(href="https://google.com/" target="_blank")
+								span._label branding
+								figure.arrow 
+									include _modules/svg/arrow.jade
 
-						ul.rrss
-							li.fb
-								a(href="#" target="_blank")
-									include _modules/svg/rrss-fb.jade
-							li.tw
-								a(href="#" target="_blank")
-									include _modules/svg/rrss-twitter.jade
-							li
-								a(href="#" target="_blank")
-									include _modules/svg/rrss-ig.jade
 
-		include _modules/footer.jade
+				.col-12.col-lg-10.offset-lg-1
+					p.help
+						span.blue-down For additional press inquiries, please contact us at 
+						a(href="#") press@melodia.io
