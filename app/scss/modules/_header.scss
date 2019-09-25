@@ -132,7 +132,7 @@
 		margin: 0 auto;
 		color: $title-color;
 
-		@include laptop-sm-width {
+		@include tablet-width {
 			padding-top: 87px;
 		}
 
