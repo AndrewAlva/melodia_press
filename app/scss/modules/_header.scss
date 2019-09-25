@@ -3,6 +3,33 @@
 	position: absolute;
 	width: 100%;
 	background-color: #fff;
+
+	&.inview{
+		.logo-wrap{
+			opacity: 0;
+			@include scale(.8,.8);
+			@include trans-ease-delay(.9s, .2s);
+		}
+
+		.title-wrap{
+			opacity: 0;
+			@include translate(0, 30px);
+			@include transitions-ease(.6s);
+		}
+
+
+		&.in-view{
+			.logo-wrap{
+				opacity: 1;
+				@include scale(1,1);
+			}
+
+			.title-wrap{
+				opacity: 1;
+				@include translate(0, 0);
+			}
+		}
+	}
 }
 
 .logo-wrap{
@@ -83,17 +110,6 @@
 
 		@include laptop-sm-width {
 			font-size: 1.58em;
-		}
-	}
-
-	&.inview{
-		opacity: 0;
-		@include scale(.8,.8);
-		@include transitions-ease(.6s);
-
-		&.in-view{
-			opacity: 1;
-			@include scale(1,1);
 		}
 	}
 }
